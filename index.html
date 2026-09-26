@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics Tutor & Compendium</title>
+    <meta
+      name="description"
+      content="Interactive physics tutor and compendium: principles, models, definitions, formulas and lessons across classical and quantum physics, organised by domain."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%9B%EF%B8%8F%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <a class="brand" href="#/">
+        <span class="brand-icon">⚛️</span>
+        <span class="brand-text">Physics Tutor</span>
+      </a>
+      <div class="search-wrap">
+        <input
+          id="search"
+          type="search"
+          class="search"
+          placeholder="Search principles, formulas, lessons…"
+          autocomplete="off"
+          aria-label="Search"
+        />
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside id="sidebar" class="sidebar">
+        <nav id="domain-nav" class="domain-nav" aria-label="Physics domains"></nav>
+      </aside>
+      <main id="content" class="content" aria-live="polite"></main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/visualizations.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
